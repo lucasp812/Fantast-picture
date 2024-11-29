@@ -1,0 +1,4 @@
+lucas;seoul;18
+lucas;rio;12
+test;seoul;14
+test;rio;14

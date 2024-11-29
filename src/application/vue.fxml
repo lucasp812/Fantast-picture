@@ -14,7 +14,7 @@
    <children>
       <ListView fx:id="listImage" onMouseClicked="#ImageSelection" prefHeight="488.0" prefWidth="172.0" visible="false" />
       <ImageView fx:id="image" fitHeight="260.0" fitWidth="518.0" layoutX="180.0" pickOnBounds="true" preserveRatio="true" visible="false" />
-      <Button fx:id="validate" layoutX="651.0" layoutY="411.0" mnemonicParsing="false" text="Valider" visible="false" />
+      <Button fx:id="validate" layoutX="651.0" layoutY="411.0" mnemonicParsing="false" onAction="#validateNote" text="Valider" visible="false" />
       <PasswordField fx:id="userLogin" layoutX="262.0" layoutY="416.0" prefHeight="31.0" prefWidth="158.0" />
       <Text fx:id="textName" layoutX="184.0" layoutY="395.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Votre nom" />
       <Text fx:id="textLogin" layoutX="180.0" layoutY="437.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Votre login" wrappingWidth="78.73291015625" />
