@@ -12,7 +12,6 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="488.0" prefWidth="747.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.VueController">
    <children>
-      <ListView fx:id="listImage" onMouseClicked="#ImageSelection" prefHeight="488.0" prefWidth="172.0" visible="false" />
       <ImageView fx:id="image" fitHeight="260.0" fitWidth="518.0" layoutX="180.0" pickOnBounds="true" preserveRatio="true" visible="false" />
       <Button fx:id="validate" layoutX="651.0" layoutY="411.0" mnemonicParsing="false" onAction="#validateNote" text="Valider" visible="false" />
       <PasswordField fx:id="userLogin" layoutX="262.0" layoutY="416.0" prefHeight="31.0" prefWidth="158.0" />
@@ -24,5 +23,6 @@
       <Button fx:id="validateLogin" layoutX="431.0" layoutY="416.0" mnemonicParsing="false" onAction="#handleLogin" text="Valider" />
       <Label fx:id="infoLogin" layoutX="245.0" layoutY="294.0" prefHeight="21.0" prefWidth="315.0" textFill="RED" />
       <VBox layoutX="14.0" layoutY="37.0" prefHeight="297.0" prefWidth="694.0" />
+      <ListView fx:id="listImage" layoutX="1.0" layoutY="16.0" onMouseClicked="#ImageSelection" prefHeight="452.0" prefWidth="179.0" visible="false" />
    </children>
 </AnchorPane>

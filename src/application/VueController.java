@@ -44,15 +44,31 @@ public class VueController {
 
     @FXML
     public void initialize() {
-      modele = new Modele();
+        modele = new Modele();
 
-      listImage.getItems().addAll(
-          modele.getImages().stream()
-                .map(entite.Image::getName)
-                .collect(Collectors.toList())
-      );
-      
+        listImage.getItems().addAll(
+            modele.getImages().stream()
+                  .map(entite.Image::getName)
+                  .collect(Collectors.toList())
+        );
+        listImage.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
+
+        // Gestionnaire de clic explicite avec logs
+        listImage.setOnMouseClicked(event -> {
+            String selectedName = listImage.getSelectionModel().getSelectedItem();
+            if (selectedName != null) {
+                System.out.println("Sélection confirmée : " + selectedName);
+                ImageSelection(); // Appelle la méthode pour gérer la sélection
+            } else {
+                System.out.println("Aucune sélection détectée.");
+            }
+        });
     }
+
+
+    
+    
+    
     
     @FXML
     private void ImageSelection() {
